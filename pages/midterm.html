@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/midterm.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="shortcut icon" href="../assets/imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Midterm</title>
+
+    <style>
+        .tbd {
+            font-size: 36px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            color: #ff0000;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+
+<!-- TODO: ADD THE reflections!!! -->
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="nav">
+        <ul class="nav-list">
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="./final.html">Final</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="main-content">
+        <div class="container">
+            <div class="card">
+                <h2>Midterm Quiz</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="../assets/imgs/inputs/midterm_quiz1.jpg" alt="Quiz 1">
+                            <button onclick="openModal('midterm_quiz1')">View Reflection</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="container">
+                <div class="card scores-act">
+                    <h2>Midterm Activities</h2>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="../assets/imgs/inputs/act_1.jpg" alt="Midterm Exam">
+                                <button onclick="openModal('act_1')">View Reflection</button>
+                            </td>
+                            <td>
+                                <img src="../assets/imgs/outputs/act_1.jpg" alt="Midterm Exam">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../assets/imgs/inputs/act_2.jpg" alt="Midterm Exam">
+                                <button onclick="openModal('act_2')">View Reflection</button>
+                            </td>
+                            <td>
+                                <img src="../assets/imgs/outputs/act_2.jpg" alt="" srcset="">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="container">
+                    <!-- Add your exam content here -->
+                    <div class="card mid-term">
+                        <h2>Midterm Exam</h2>
+                        <p class="tbd">TBD</p>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="card assignments">
+                        <h2>Assignment</h2>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="../assets/imgs/inputs/assignment_1.jpg" alt="" srcset="">
+                                    <button onclick="openModal('assignment_1')">View Reflection</button>
+                                </td>
+                                <td>
+                                    <img src="../assets/imgs/outputs/assignment_1.jpg" alt="" srcset="">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="card about-me">
+                        <h2>About Me Activity</h2>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="../assets/imgs/inputs/about_me.jpg" alt="">
+                                    <button onclick="openModal('about_me', 'about_me')">View Reflection</button>
+                                </td>
+                                <td>
+                                    <img src="../assets/imgs/outputs/about_me.jpg" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="midterm_quiz1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('midterm_quiz1')">&times;</span>
+            <div id="midterm_quiz1-content"></div>
+        </div>
+    </div>
+    <div id="act_1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('act_1')">&times;</span>
+            <div id="act_1-content"></div>
+        </div>
+    </div>
+    <div id="act_2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('act_2')">&times;</span>
+            <div id="act_2-content"></div>
+        </div>
+    </div>
+    <div id="assignment_1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('assignment_1')">&times;</span>
+            <div id="assignment_1-content"></div>
+        </div>
+    </div>
+    <div id="about_me" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('about_me')">&times;</span>
+            <div id="about_me-content"></div>
+        </div>
+    <script src="../scripts/reflection.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</body>
+
+</html>

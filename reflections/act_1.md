@@ -1,0 +1,3 @@
+# Reflection on MySQL Learning Experience
+
+`This experience served as a crucial reinforcement of fundamental MySQL concepts, but let’s be honest — it felt like a basic tutorial masquerading as something more advanced. The design and structure of the material barely scratched the surface, leaving much to be desired in terms of challenge and depth. However, I refuse to let that limit my growth. If anything, it’s a reminder that true mastery isn’t handed over in pre-packaged lessons. I’m committed to pushing beyond the basics, diving into real-world applications, and building a level of expertise that goes beyond "just enough." The goal isn’t to know it — the goal is to master it.`
